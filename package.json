@@ -1,0 +1,46 @@
+{
+  "name": "broccoli-fileindex",
+  "version": "0.0.0",
+  "description": "Outputs an HTML file that list links to other HTML pages",
+  "scripts": {
+    "hint": "jshint --reporter=node_modules/jshint-stylish index.js",
+    "dev": "npm run watch",
+    "test": "mocha tests/",
+    "watch": "watchify **/*.js -o 'npm run hint && npm run test'"
+  },
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.10.x"
+  },
+  "author": {
+    "name": "raiseandfall",
+    "url": "https://github.com/raiseandfall"
+  },
+  "keywords": [
+    "broccoli-plugin",
+    "html",
+    "fileindex",
+    "links"
+  ],
+  "homepage": "https://github.com/raiseandfall/broccoli-fileindex",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:raiseandfall/broccoli-fileindex.git"
+  },
+  "bugs": {
+    "url": "https://github.com/raiseandfall/broccoli-fileindex/issues"
+  },
+  "devDependencies": {
+    "broccoli": "^0.16.3",
+    "expect.js": "^0.3.1",
+    "jshint": "^2.8.0",
+    "jshint-stylish": "^2.0.1",
+    "mocha": "^2.2.5",
+    "watchify": "^3.2.3"
+  },
+  "dependencies": {
+    "broccoli-writer": "^0.1.1",
+    "globby": "^2.0.0",
+    "rsvp": "^3.0.18"
+  }
+}
