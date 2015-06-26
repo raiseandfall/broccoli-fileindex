@@ -37,6 +37,13 @@ _Optional_
 
 Path to the HTML page to generate.
 
+#### options.showOnlyFilenames
+Type: `Boolean`  
+_Optional_  
+**Default** false
+
+Whether ot not to show only the filenames in the HTML listing page
+
 ## CONTRIBUTE
 ```shell
 $ npm run test

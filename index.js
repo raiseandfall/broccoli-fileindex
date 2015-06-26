@@ -16,6 +16,7 @@ var FileIndex = function FileIndex(inputTree, options) {
   this.inputTree = inputTree;
   this.files = options.files || [];
   this.dest = options.dest || 'index.html';
+  this.showOnlyFilenames = options.showOnlyFilenames || false;
 };
 
 FileIndex.prototype = Object.create(Writer.prototype);
@@ -33,9 +34,10 @@ FileIndex.prototype.write = function(readTree, destDir) {
       try {
         globby(fil, {}, function(err, files) {
           for (var i = 0; i < files.length; i++) {
-            var filename = files[i].split(srcDir).pop();
-            filename = filename.charAt(0) === '/' ? filename.slice(1, filename.length) : filename;
-            files[i] = '<a href="' + files[i] + '" style="display: block; margin-bottom: 15px; padding-left: 15px;">'+ filename +'</a>\n';
+            var stripTmp = files[i].split(destDir).pop();
+            var stripFolder = stripRootSlash(stripTmp.split(srcDir).pop());
+            var filename = self.showOnlyFilenames ? stripFolder.split('/').pop() : stripFolder;
+            files[i] = '<a href="' + stripRootSlash(stripFolder) + '" style="display: block; margin-bottom: 15px; padding-left: 15px;">'+ filename +'</a>\n';
           }
           var output = files.join("");
 
@@ -48,6 +50,10 @@ FileIndex.prototype.write = function(readTree, destDir) {
       }
     });
   });
+};
+
+var stripRootSlash = function(f) {
+  return f.charAt(0) === '/' ? f.slice(1, f.length) : f;
 };
 
 module.exports = FileIndex;
