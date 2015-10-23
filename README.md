@@ -48,3 +48,6 @@ Whether ot not to show only the filenames in the HTML listing page
 ```shell
 $ npm run test
 ```
+
+## LICENSE
+MIT
