@@ -1,7 +1,7 @@
 # CHANGELOG
 
-## 1.1.2
-- [TEST] Added node 5.0 & 5.5 on travis config
+## 1.1.3
+- [TEST] Added node 5.0 on travis config
 
 ## 1.1.1
 - [TEST] Added travisCI support for nodeJS 4.0 & 4.2
