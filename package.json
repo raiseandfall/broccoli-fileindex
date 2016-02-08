@@ -1,6 +1,6 @@
 {
   "name": "broccoli-fileindex",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Outputs an HTML file that list links to other HTML pages",
   "scripts": {
     "hint": "jshint --reporter=node_modules/jshint-stylish index.js",
