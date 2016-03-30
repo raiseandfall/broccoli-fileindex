@@ -4,6 +4,8 @@
 
 > Outputs a HTML file that list links to other HTML pages
 
+> There is also a version for [Gulp](https://github.com/raiseandfall/gulp-fileindex)
+
 ## [CHANGELOG](./CHANGELOG.md)
 
 ## INSTALL
