@@ -1,5 +1,8 @@
 # CHANGELOG
 
+## 1.1.4
+- [DOC] Doc edits
+
 ## 1.1.3
 - [TEST] Added node 5.0 on travis config
 
