@@ -1,6 +1,6 @@
 # Broccoli-fileindex  
 
-[![Build Status](https://travis-ci.org/raiseandfall/broccoli-fileindex.svg)](https://travis-ci.org/raiseandfall/broccoli-fileindex)
+[![Build Status](https://travis-ci.org/raiseandfall/broccoli-fileindex.svg)](https://travis-ci.org/raiseandfall/broccoli-fileindex) [![Downloads](https://img.shields.io/npm/dt/broccoli-fileindex.svg)](https://www.npmjs.com/package/broccoli-fileindex)
 
 > Outputs a HTML file that list links to other HTML pages
 
